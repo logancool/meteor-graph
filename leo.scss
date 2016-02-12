@@ -1,14 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One);
+
+body {
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
 #bg {
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
 }
 #yes, #no {
+    font-family: 'Julius Sans One', sans-serif;
     position:relative;
     text-align: center;
-    line-height: 3.5;
+    line-height: 2;
 }
 
 
@@ -16,8 +29,8 @@
     margin: 0 auto;
 }
 
-.charts {
-
+#charts {
+    margin: 0 auto;
 }
 
 
@@ -58,8 +71,12 @@
 }
 
 p{
-    font-size: 20px;
-
+    font-size: 35px;
+    font-weight: bold;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
 }
 
 p:hover{
@@ -89,7 +106,7 @@ p:hover{
 
 .yes-effect div:hover,
 .yes-effect div:focus {
-    color: greenyellow;
+    color: green;
 
 }
 
@@ -104,7 +121,7 @@ p:hover{
 .yes-effect div:focus::before {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
-    transform: translateX(-30px) rotate(45deg);
+    transform: translateX(-20px) rotate(45deg);
     width: 50%;
 }
 
@@ -116,7 +133,7 @@ p:hover{
 }
 
 .yes-effect div{
-    color: greenyellow;
+    color: green;
 }
 .yes-effect div::before,
 .yes-effect div::after {
@@ -129,11 +146,11 @@ p:hover{
 /*** NO EFFECT ***/
 
 .no-effect div{
-    color: orangered;
+    color: red;
 }
 .no-effect div::before,
 .no-effect div::after {
-    background: orangered;
+    background: red;
 }
 
 .no-effect div::before {
